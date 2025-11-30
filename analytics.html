@@ -11,70 +11,87 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark ">
-  <a class="navbar-brand " href="#">ASHDORO</a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">ASHDORO</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse noraml-font" id="navbarNavAltMarkup">
     <div class="navbar-nav m-auto">
-      <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link" href="analytics.html">Analytics</a>
-      <a class="nav-link" href="#">Tasks</a>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="analytics.html">Analytics</a>
     </div>
   </div>
 </nav>
-    <h1 class="logo ">ANALYTICS</h1>
-    <div class="d-flex justify-content-center">
-        <div class="dropdown">
-  <button class="button-list dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item  " href="#">Action</a>
-    <a class="dropdown-item  " href="#">Another action</a>
-    <a class="dropdown-item  " href="#">Something else here</a>
-  </div>
-</div>
-    <p></p>
-    </div>
-    <div class="analytics-container">
 
-        <div id="taskAnalytics" class="analytics-list">
-            <!-- JS will load items here -->
+    <!-- Single Page Dashboard Layout -->
+    <div class="dashboard-container">
+        
+        <!-- Top Row: Summary Cards -->
+        <div class="dashboard-row-top">
+            <div class="summary-card-compact">
+                <div class="card-icon-small">⏱️</div>
+                <div class="card-data">
+                    <p id="totalFocus" class="card-value">0 min</p>
+                    <h3 class="card-label">Focus Time</h3>
+                </div>
+            </div>
+
+            <div class="summary-card-compact">
+                <div class="card-icon-small">🎯</div>
+                <div class="card-data">
+                    <p id="totalSessions" class="card-value">0</p>
+                    <h3 class="card-label">Sessions</h3>
+                </div>
+            </div>
+
+            <div class="summary-card-compact">
+                <div class="card-icon-small">📈</div>
+                <div class="card-data">
+                    <p id="focusValue" class="card-value">0%</p>
+                    <h3 class="card-label">Completion</h3>
+                </div>
+            </div>
+
+            <div class="summary-card-compact">
+                <div class="card-icon-small">🏆</div>
+                <div class="card-data">
+                    <p id="bestDay" class="card-value">-</p>
+                    <h3 class="card-label">Best Day</h3>
+                </div>
+            </div>
         </div>
 
-        <div class="overall-focus">
-            <span>Overall Focus :</span>
-            <span id="focusValue">0%</span>
+        <!-- Middle Row: Charts -->
+        <div class="dashboard-row-middle">
+            <!-- Left: Radar Chart -->
+            <div class="chart-compact radar-section">
+                <h3 class="chart-title-compact">Activity Quality</h3>
+                <canvas id="qualityRadarChart"></canvas>
+            </div>
+
+            <!-- Right: Two Small Charts Stacked -->
+            <div class="charts-stack">
+                <div class="chart-compact">
+                    <h3 class="chart-title-compact">Daily Focus</h3>
+                    <canvas id="focusLineChart"></canvas>
+                </div>
+                
+                <div class="chart-compact">
+                    <h3 class="chart-title-compact">Sessions</h3>
+                    <canvas id="sessionBarChart"></canvas>
+                </div>
+            </div>
         </div>
 
+        <!-- Bottom Row: Recent Sessions -->
+        <div class="dashboard-row-bottom">
+            <h3 class="section-title-compact">Recent Sessions</h3>
+            <div id="taskAnalytics" class="sessions-compact">
+                <!-- JS will load items here -->
+            </div>
+        </div>
     </div>
-
-    <div class="report-summary">
-
-    <div class="summary-card">
-        <h3>Total Focus Time</h3>
-        <p id="totalFocus">0 min</p>
-    </div>
-
-    <div class="summary-card">
-        <h3>Total Sessions</h3>
-        <p id="totalSessions">0</p>
-    </div>
-
-    <div class="summary-card">
-        <h3>Best Day</h3>
-        <p id="bestDay">-</p>
-    </div>
-
-</div>
-
-<div class="charts-section">
-    <canvas id="focusLineChart"></canvas>
-    <canvas id="sessionBarChart" class="mt-5"></canvas>
-</div>
-
 
     <script src="analytics.js"></script>
 </body>

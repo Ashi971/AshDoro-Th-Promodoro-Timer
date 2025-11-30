@@ -18,25 +18,53 @@
     <div class="navbar-nav m-auto">
       <a class="nav-link active" href="index.html">Home</a>
       <a class="nav-link" href="analytics.html">Analytics</a>
-      <a class="nav-link" href="task.html">Tasks</a>
+
     </div>
   </div>
 </nav>
 
     <div class="timer-container">
         
+        <!-- Timer Mode Selector -->
+        <div class="timer-mode-selector">
+            <button class="mode-btn active" data-mode="pomodoro" data-minutes="25">
+                🍅 Pomodoro<br><span class="mode-time">25 min</span>
+            </button>
+            <button class="mode-btn" data-mode="short" data-minutes="15">
+                ⚡ Short Focus<br><span class="mode-time">15 min</span>
+            </button>
+            <button class="mode-btn" data-mode="long" data-minutes="50">
+                🎯 Deep Work<br><span class="mode-time">50 min</span>
+            </button>
+            <button class="mode-btn break-mode" data-mode="shortbreak" data-minutes="5">
+                ☕ Short Break<br><span class="mode-time">5 min</span>
+            </button>
+            <button class="mode-btn break-mode" data-mode="longbreak" data-minutes="15">
+                🌴 Long Break<br><span class="mode-time">15 min</span>
+            </button>
+        </div>
 
         <div class="timer-wrapper ">
             <div class="wired-guy">
-                <div id="timer" class="timer-display bg-warp">30:00</div>
+                <div id="timer" class="timer-display bg-warp">25:00</div>
+                <div id="timerLabel" class="timer-label">FOCUS TIME</div>
             </div>
         </div>
 
-        <button id="startBtn" class=" btn-primary1 primary">START</button>
-        <button id="stopBtn" class=" btn-primary1 danger hidden">STOP</button>
-    </div>
+        <button id="startBtn" class="btn-primary1 primary">START</button>
+        <button id="stopBtn" class="btn-primary1 danger hidden">STOP</button>
 
-    
+        <!-- Productivity Tips Section -->
+        <div class="tips-container" id="tipsContainer">
+            <div class="tip-card">
+                <div class="tip-icon">💡</div>
+                <div class="tip-content">
+                    <h3>Focus Tip</h3>
+                    <p id="tipText">Click START to begin your focus session</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
