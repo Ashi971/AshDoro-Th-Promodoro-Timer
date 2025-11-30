@@ -1,0 +1,10 @@
+{
+  "sessions": [
+    {
+      "taskName": "Study",
+      "duration": 30,
+      "breaks": 5,
+      "endTime": "23:10"
+    }
+  ]
+}

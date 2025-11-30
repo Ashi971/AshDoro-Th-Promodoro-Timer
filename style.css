@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&display=swap');
+
+body {
+    background-image: linear-gradient(to top,#001F3F,#0F52BA);
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.normal-font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+
+}
+/* TIMER AREA */
+.timer-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.timer-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.timer-display {
+    font-size: 60px;
+    font-family: Lexend Giga;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding: 130px;
+    padding-top: 175px;
+    
+}
+.btn-primary1{
+    width: 700px;
+    background-color: white;
+    height: 40px;
+    border-radius: 15px;
+    font-family: Lexend;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    border-style: none;
+}
+
+
+.primary:hover {
+    background: #001F3F;
+    background-image: linear-gradient(to bottom,rgb(33, 33, 134),#0F52BA);
+    color: white;
+}
+
+
+.danger:hover {
+    background: #D53333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* BOTTOM NAV BAR */
+.bottom-nav {
+    height: 70px;
+    background: #1A1A1A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #333;
+}
+
+.nav-link {
+    color: #BBBBBB;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .timer-display {
+        font-size: 80px;
+    }
+
+    .btn {
+        width: 180px;
+        font-size: 22px;
+        padding: 14px 0;
+    }
+}
+/* ANALYTICS PAGE */
+
+.analytics-container {
+    width: 90%;
+    margin: 20px auto 100px auto;
+}
+
+.analytics-list {
+    margin-top: 30px;
+}
+
+.analytics-item {
+    background: #1A1A1A;
+    padding: 18px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.analytics-item span {
+    font-size: 20px;
+    color: #DDD;
+}
+
+.analytics-time {
+    font-size: 18px;
+    color: #888;
+}
+.bg-warp{
+    background-image: url(pngwing.com\ \(3\)\ \(1\).png);
+    background-size: cover;
+    height: 440px;
+    width: 440px;
+}
+.overall-focus {
+    margin-top: 40px;
+    padding: 20px;
+    background: #222;
+    border-radius: 12px;
+    font-size: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#focusValue {
+    font-weight: 700;
+    color: #4ADE80; /* green */
+    font-size: 30px;
+}
+
+.active {
+    color: white;
+}
+.logo{
+    text-align: center;
+    font-family: Lexend;
+    font-weight: 0;
+    color: white;
+    font-size: 32px;
+    margin-top: 10px;
+}
+.button-list{
+    background-color: white;
+    height: 40px;
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-family: LEXEND;
+    margin-top: 20px;
+    border-style: none;
+}
+.list-font{
+    margin: 3px;
+}
+.report-summary {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.summary-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: LEXEND;
+}
+
+.summary-card p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.charts-section {
+    width: 70%;
+    margin: 40px auto;
+}
