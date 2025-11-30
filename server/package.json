@@ -1,0 +1,23 @@
+{
+  "name": "ashdoro-pomodoro-timer",
+  "version": "1.0.0",
+  "description": "A beautiful Pomodoro timer with productivity analytics",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "pomodoro",
+    "timer",
+    "productivity",
+    "focus"
+  ],
+  "author": "Ashi971",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}git add
